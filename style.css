@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+/*  */
+body{
+    background-color:#bb696c;
+    color:white;
+    width: 100%;
+}
+header{
+    height:20vh;
+    width:100%;
+    list-style: none;
+}
+.top{
+    width:100%;
+}
+header .top ul{
+    list-style: none;
+    display: flex;
+    padding: 3rem 1.2rem;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.underline:hover{
+    text-decoration: underline;
+}
+.top img{
+    height:10vh;
+}
+.top li img{
+    height:2.2rem;
+    padding-right: 1rem;
+}
+main{
+    height: 63vh;
+    width:100%;
+    display: grid;
+    grid-template-columns:  60% 40%;
+}
+.slider{
+    position: relative;
+    width:90%;
+    overflow:hidden;
+    display: flex;
+}
+.images{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+.images img{
+    transition:all 0.15s ease;
+}
+.images input{
+    display: none;
+}
+.dots{
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+    
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fbf8f8 3px;
+    cursor:pointer;
+    transition:all 0.15s ease;
+    margin:5px;
+}
+.dots label:hover{background: #fff;}
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -342%;
+}
+#img3:checked ~ .m3{
+    margin-left:-338%;
+}
+.right{
+    padding: 4.9rem;
+    word-spacing:1px;
+}
+.right ul li{
+    list-style: none;
+}
+.Model{
+    font-size: 2rem;
+    font-family: 'Fira+Sans';
+    font-weight: bold;
+}
+.amount{
+    font-size: 1.5rem;
+}
+.color{
+    padding-top: 3rem;
+}
+.right ul li{
+    padding: 0.7rem;
+}
+#black{
+    border: 2px solid goldenrod;
+}
+.right ul .wishlist{
+    width:15rem;
+    height: 2rem;
+    background-color:white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul .wishlist:hover{
+    background-color: rgb(217, 170, 180);
+}
+.right ul .product{
+    width: 15rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+footer{
+    height: 17vh;
+    width:100%;
+    background-color:#925254;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+footer ul li img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 0rem;
+}
+footer .bottom-1 li{
+    list-style: none;
+    text-align: center;
+}
+footer .bottom-2 li{
+    list-style: none;
+    text-align: center;
+    
+}footer .bottom-3 li{
+    list-style: none;
+    text-align: center;
+    
+}footer .bottom-4 li{
+    list-style: none;
+    text-align: center;
+    
+}
+h5{
+    letter-spacing:1px;
+    font-size: 15px;
+}
